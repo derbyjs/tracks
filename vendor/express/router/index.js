@@ -5,8 +5,17 @@
 var Route = require('./route')
   , utils = require('../utils')
   , methods = require('methods')
-  , debug = require('debug')('express:router')
-  , parse = require('url').parse;
+  , debug = require('debug')('express:router');
+
+var urlParse = require('url').parse;
+function parse(req) {
+  var parsed = req._parsedUrl;
+  if (parsed && parsed.href == req.url) {
+    return parsed;
+  } else {
+    return req._parsedUrl = parse(req.url);
+  }
+}
 
 /**
  * Expose `Router` constructor.

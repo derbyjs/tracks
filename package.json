@@ -11,8 +11,9 @@
     "main": "./lib/browser.js"
   },
   "dependencies": {
-    "express": "~3.2.4",
-    "qs": "0.5.3"
+    "qs": "~0.6.5",
+    "methods": "0.0.1",
+    "debug": "~0.7.2"
   },
   "devDependencies": {
     "mocha": ">=1",
