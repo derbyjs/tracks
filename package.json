@@ -10,6 +10,7 @@
   "browserify": {
     "main": "./lib/browser.js"
   },
+  "browser": "./lib/browser.js",
   "dependencies": {
     "qs": "~0.6.5",
     "methods": "0.0.1",
