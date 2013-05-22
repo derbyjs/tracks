@@ -18,10 +18,17 @@ function parse(req) {
   if (parsed && parsed.href == req.url) {
     return parsed;
   } else {
-    return req._parsedUrl = parse(req.url);
+    return req._parsedUrl = urlParse(req.url);
   }
 }
 ```
+
+and at the beginning of `Router.prototype._dispatch`, add
+
+```
+  delete req._parsedUrl;
+```
+
 
 2. In `/utils.js`, remove
 

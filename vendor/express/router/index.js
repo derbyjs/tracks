@@ -13,7 +13,7 @@ function parse(req) {
   if (parsed && parsed.href == req.url) {
     return parsed;
   } else {
-    return req._parsedUrl = parse(req.url);
+    return req._parsedUrl = urlParse(req.url);
   }
 }
 
@@ -92,6 +92,8 @@ Router.prototype.param = function(name, fn){
 Router.prototype._dispatch = function(req, res, next){
   var params = this.params
     , self = this;
+
+  delete req._parsedUrl;
 
   debug('dispatching %s %s (%s)', req.method, req.url, req.originalUrl);
 
