@@ -3,7 +3,7 @@
   "description": "",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codeparty/tracks.git"
+    "url": "git://github.com/derbyjs/tracks.git"
   },
   "version": "0.5.4",
   "main": "./lib/index.js",
