@@ -1,6 +1,6 @@
 {
   "name": "tracks",
-  "description": "",
+  "description": "Shared browser and server routes built on Express",
   "repository": {
     "type": "git",
     "url": "git://github.com/derbyjs/tracks.git"
@@ -24,5 +24,17 @@
   "engines": {
     "node": ">=0.4.0"
   },
-  "optionalDependencies": {}
+  "optionalDependencies": {},
+  "bugs": {
+    "url": "https://github.com/codeparty/tracks/issues"
+  },
+  "homepage": "https://github.com/codeparty/tracks#readme",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nate Smith",
+  "license": "MIT"
 }
