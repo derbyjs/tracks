@@ -26,9 +26,9 @@
   },
   "optionalDependencies": {},
   "bugs": {
-    "url": "https://github.com/codeparty/tracks/issues"
+    "url": "https://github.com/derbyjs/tracks/issues"
   },
-  "homepage": "https://github.com/codeparty/tracks#readme",
+  "homepage": "https://github.com/derbyjs/tracks#readme",
   "directories": {
     "test": "test"
   },
