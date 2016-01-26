@@ -12,9 +12,9 @@
   },
   "browser": "./lib/browser.js",
   "dependencies": {
-    "qs": "~0.6.5",
+    "debug": "~0.7.2",
     "methods": "0.0.1",
-    "debug": "~0.7.2"
+    "qs": "^6.0.2"
   },
   "devDependencies": {
     "mocha": ">=1",
