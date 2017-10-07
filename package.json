@@ -12,8 +12,8 @@
   },
   "browser": "./lib/browser.js",
   "dependencies": {
-    "debug": "~0.7.2",
-    "methods": "0.0.1",
+    "debug": "~3.1.0",
+    "methods": "1.1.2",
     "qs": "^6.0.2"
   },
   "devDependencies": {
