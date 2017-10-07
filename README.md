@@ -1,5 +1,7 @@
 # Tracks
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/derbyjs/tracks.svg)](https://greenkeeper.io/)
+
 Shared browser and server routes built on Express
 
 ## MIT License
