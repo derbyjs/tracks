@@ -1,5 +1,5 @@
 
-These files were copied and modified from Express version 3.2.4 to make them work in Browserify. In addition, `methods` and `debug` were added as dependencies to `package.json`.
+These files were copied and modified from Express version 3.2.4 to make them work in Browserify. The `debug` dependency (and its use) was removed and `methods` was added a dependency to `package.json`.
 
 Changes:
 

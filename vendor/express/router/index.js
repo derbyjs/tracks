@@ -4,8 +4,7 @@
 
 var Route = require('./route')
   , utils = require('../utils')
-  , methods = require('methods')
-  , debug = require('debug')('express:router');
+  , methods = require('methods');
 
 var urlParse = require('url').parse;
 function parse(req) {
@@ -95,8 +94,6 @@ Router.prototype._dispatch = function(req, res, next){
 
   delete req._parsedUrl;
 
-  debug('dispatching %s %s (%s)', req.method, req.url, req.originalUrl);
-
   // route dispatch
   (function pass(i, err){
     var paramCallbacks
@@ -116,7 +113,6 @@ Router.prototype._dispatch = function(req, res, next){
 
     // no route
     if (!route) return next(err);
-    debug('matched %s %s', route.method, route.path);
 
     // we have a route
     // start at param 0
@@ -264,7 +260,6 @@ Router.prototype.route = function(method, path, callbacks){
   });
 
   // create the route
-  debug('defined %s %s', method, path);
   var route = new Route(method, path, callbacks, {
     sensitive: this.caseSensitive,
     strict: this.strict
