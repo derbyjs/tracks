@@ -1,5 +1,5 @@
 {
-  "name": "tracks",
+  "name": "@derbyjs/tracks",
   "description": "Shared browser and server routes built on Express",
   "repository": {
     "type": "git",
